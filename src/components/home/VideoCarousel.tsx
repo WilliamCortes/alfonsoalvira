@@ -17,7 +17,7 @@ const VideoCarousel: React.FC = () => {
   const currentVideo = videos[currentIndex];
 
   // Base URL for YouTube embed with JS API enabled
-  const embedUrl = `https://www.youtube.com/embed/${currentVideo.id}?enablejsapi=1&rel=0&modestbranding=1&controls=0&showinfo=0&autoplay=1&mute=${isMuted ? '1' : '0'}&loop=1&playlist=${currentVideo.id}`;
+  const embedUrl = `https://www.youtube.com/embed/${currentVideo.id}?enablejsapi=1&rel=0&modestbranding=1&controls=0&showinfo=0&fs=0&iv_load_policy=3&autoplay=1&mute=${isMuted ? '1' : '0'}&loop=1&playlist=${currentVideo.id}`;
 
   const handleNext = () => {
     setLoading(true);
