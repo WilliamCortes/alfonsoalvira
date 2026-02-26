@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
               <img 
                src={banner}
                 alt="Don Alfonso Alvira Terapia" 
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover object-[50%_25%]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
               <div className="absolute bottom-4 left-4 right-4 text-white">

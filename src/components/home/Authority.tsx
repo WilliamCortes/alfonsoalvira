@@ -48,7 +48,7 @@ const Authority: React.FC = () => {
                 <img 
                   src={alfonsoProfile} 
                   alt="Don Alfonso Alvira" 
-                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500" 
+                  className="object-cover object-[50%_25%] w-full h-full hover:scale-105 transition-transform duration-500" 
                 />
              </div>
              

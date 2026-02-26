@@ -142,7 +142,7 @@ const SeoLanding: React.FC = () => {
               <img 
                 src={alfonsoProfile} 
                 alt="Don Alfonso Alvira sobandero tradicional en Villavicencio realizando terapia de columna" 
-                className="relative rounded-2xl shadow-2xl w-full max-w-md mx-auto object-cover aspect-[3/4] border-4 border-white"
+                className="relative rounded-2xl shadow-2xl w-full max-w-md mx-auto object-cover object-[50%_25%] aspect-[3/4] border-4 border-white"
               />
             </div>
           </div>
