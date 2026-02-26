@@ -23,4 +23,19 @@
   .text-balance {
     text-wrap: balance;
   }
+
+  /* Animación de bounce suave para WhatsApp - se ejecuta 2 veces cada 4 segundos */
+  .animate-bounce-gentle {
+    animation: bounce-gentle 4s ease-in-out 2;
+    animation-delay: 1s;
+  }
+
+  @keyframes bounce-gentle {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
 }
