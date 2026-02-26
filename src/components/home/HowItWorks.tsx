@@ -1,6 +1,7 @@
 import React from 'react';
 import content from '../../data/content.json';
-import { ArrowRight, MessageCircle } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 import Button from '../common/Button';
 
 const HowItWorks: React.FC = () => {
@@ -32,7 +33,7 @@ const HowItWorks: React.FC = () => {
             external
             className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white shadow-xl animate-pulse"
           >
-            <MessageCircle className="mr-2 h-5 w-5" />
+            <FaWhatsapp className="mr-2 h-5 w-5" />
             Iniciar mi Recuperación Ahora
           </Button>
           <p className="mt-4 text-sm text-gray-500">

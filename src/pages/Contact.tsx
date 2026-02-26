@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout/Layout';
-import { Phone, MapPin, Clock, Mail, MessageCircle } from 'lucide-react';
+import { Phone, MapPin, Clock, Mail } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 import Button from '../components/common/Button';
 
 const Contact: React.FC = () => {
@@ -58,16 +59,6 @@ const Contact: React.FC = () => {
                       <p className="text-gray-600">8:00 AM - 6:00 PM</p>
                     </div>
                   </div>
-                  
-                  <div className="flex items-start">
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary flex-shrink-0 mr-4">
-                      <Mail className="h-6 w-6" />
-                    </div>
-                    <div>
-                      <p className="font-bold text-gray-800 mb-1">Correo Electrónico</p>
-                      <p className="text-gray-600">contacto@alfonsoalvira.com</p>
-                    </div>
-                  </div>
                 </div>
               </div>
 
@@ -89,7 +80,7 @@ const Contact: React.FC = () => {
             {/* Direct WhatsApp Action */}
             <div className="bg-white p-8 rounded-xl shadow-lg border border-green-100 flex flex-col items-center text-center h-full justify-center">
               <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mb-6 animate-pulse">
-                <MessageCircle className="h-10 w-10 text-green-600" />
+                <FaWhatsapp className="h-10 w-10 text-green-600" />
               </div>
               
               <h3 className="text-2xl font-serif font-bold text-gray-900 mb-4">
@@ -106,7 +97,7 @@ const Contact: React.FC = () => {
                 external
                 className="w-full bg-green-600 hover:bg-green-700 text-white shadow-xl py-4 text-lg"
               >
-                <Phone className="mr-2 h-6 w-6" />
+                <FaWhatsapp className="mr-2 h-6 w-6" />
                 Chatear en WhatsApp
               </Button>
               

@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import Layout from '../components/layout/Layout';
 import { Phone, MapPin, Clock, Award, CheckCircle2, User, HeartPulse, Activity } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 import Button from '../components/common/Button';
 import alfonsoProfile from '/alfonso_la_cabana.jpg';
 
@@ -131,7 +132,7 @@ const SeoLanding: React.FC = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Button size="lg" href={whatsappUrl} external className="bg-green-600 hover:bg-green-700 w-full sm:w-auto shadow-lg transform hover:scale-105 transition-all">
-                  <Phone className="mr-2 h-5 w-5" />
+                  <FaWhatsapp className="mr-2 h-5 w-5" />
                   Agendar Cita: 320 2168589
                 </Button>
               </div>
@@ -305,7 +306,7 @@ const SeoLanding: React.FC = () => {
           </div>
           
           <Button size="lg" href={whatsappUrl} external className="bg-green-500 hover:bg-green-600 text-white border-none shadow-xl animate-pulse text-lg px-8 py-4 h-auto">
-            <Phone className="mr-3 h-6 w-6" />
+            <FaWhatsapp className="mr-3 h-6 w-6" />
             Llamar o Escribir: 320 2168589
           </Button>
           <p className="mt-6 text-sm text-white/60">

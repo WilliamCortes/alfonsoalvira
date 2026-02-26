@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, MapPin, Clock, Facebook, MessageCircle } from 'lucide-react';
+import { Phone, MapPin, Clock, Facebook } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 import content from '../../data/content.json';
 
 const Footer: React.FC = () => {
@@ -84,7 +85,7 @@ const Footer: React.FC = () => {
                   rel="noopener noreferrer"
                   className="rounded-full bg-white/10 p-2 hover:bg-accent-orange hover:text-white transition-colors"
                 >
-                  <MessageCircle className="h-6 w-6" />
+                  <FaWhatsapp className="h-6 w-6" />
                 </a>
               </li>
             </ul>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
-import WhatsAppFloat from '../common/WhatsAppFloat';
+import { WhatsAppButton } from '../common/WhatsAppButton';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -15,7 +15,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         {children}
       </main>
       <Footer />
-      <WhatsAppFloat />
+      <WhatsAppButton />
     </div>
   );
 };

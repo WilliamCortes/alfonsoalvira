@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../common/Button';
-import { Phone } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 import banner from "@/assets/banner.png"
 import content from '../../data/content.json';
 
@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
             </p>
             <div className="pt-4">
               <Button size="lg" href="https://wa.me/573202168589?text=Hola,%20quisiera%20agendar%20una%20cita%20con%20Don%20Alfonso." external className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white shadow-lg transform hover:scale-105 transition-all">
-                <Phone className="mr-2 h-5 w-5" />
+                <FaWhatsapp className="mr-2 h-5 w-5" />
                 {hero.cta}
               </Button>
             </div>
