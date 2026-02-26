@@ -269,7 +269,7 @@ const SeoLanding: React.FC = () => {
           </h2>
           
           <div className="space-y-6">
-            {faqSchema.mainEntity.map((faq, index) => (
+            {structuredData['@graph'][1].mainEntity.map((faq: any, index: number) => (
               <div key={index} className="border-b border-gray-100 pb-6">
                 <h3 className="text-lg font-bold text-gray-800 mb-2 flex items-start gap-2">
                   <span className="text-primary font-serif">P:</span> {faq.name}
