@@ -92,7 +92,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="mt-12 border-t border-white/20 pt-8 text-center text-sm text-white/80">
-          <p>Creado por <a href="https://vendo365.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent-orange">vendo365.com</a></p>
+          <p>🌐 Sitio web desarrollado por <a href="https://vendo365.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent-orange">vendo365.com</a>.</p>
         </div>
       </div>
     </footer>
