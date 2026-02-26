@@ -1,18 +1,47 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Layout from '../components/layout/Layout';
-import { Phone, MapPin, Clock, Mail } from 'lucide-react';
+import { Phone, MapPin, Clock } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
 import Button from '../components/common/Button';
 
 const Contact: React.FC = () => {
+  const contactSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "mainEntity": {
+      "@type": "LocalBusiness",
+      "name": "Don Alfonso Alvira",
+      "telephone": "+573202168589",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Cra 20A #38A-08, Barrio Morichal",
+        "addressLocality": "Villavicencio",
+        "addressRegion": "Meta",
+        "addressCountry": "CO"
+      }
+    }
+  };
+
   return (
     <Layout>
+      <Helmet>
+        <title>Contacto Don Alfonso Alvira | Sobandero en Villavicencio</title>
+        <meta name="description" content="Agenda tu cita con Don Alfonso Alvira, sobandero en Villavicencio con 43 años de experiencia. Ubicado en Barrio Morichal. WhatsApp 3202168589." />
+        <link rel="canonical" href="https://alfonsoalvira.vendo365.com/contact" />
+        <script type="application/ld+json">
+          {JSON.stringify(contactSchema)}
+        </script>
+      </Helmet>
+
       <div className="bg-cream-light py-12 lg:py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h1 className="text-4xl lg:text-5xl font-serif font-bold text-primary mb-6">Contáctanos</h1>
+            <h1 className="text-4xl lg:text-5xl font-serif font-bold text-primary mb-6">
+              Contáctanos en Villavicencio
+            </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Estamos aquí para ayudarte. Agenda tu cita o realiza tus consultas directamente con nosotros.
+              Estamos aquí para ayudarte a recuperar tu movilidad. Agenda tu cita con el sobandero de confianza del Meta.
             </p>
           </div>
 
@@ -20,7 +49,7 @@ const Contact: React.FC = () => {
             {/* Contact Info */}
             <div className="space-y-8">
               <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-                <h3 className="text-2xl font-serif font-bold text-primary mb-6">Información de Contacto</h3>
+                <h2 className="text-2xl font-serif font-bold text-primary mb-6">Información de Contacto</h2>
                 
                 <div className="space-y-6">
                   <div className="flex items-start">
@@ -32,7 +61,7 @@ const Contact: React.FC = () => {
                       <a href="https://wa.me/573202168589" className="text-lg text-accent-orange hover:underline block">
                         +57 320 2168589
                       </a>
-                      <p className="text-sm text-gray-500 mt-1">Respuesta rápida por WhatsApp</p>
+                      <p className="text-sm text-gray-500 mt-1">Respuesta inmediata para citas</p>
                     </div>
                   </div>
 
@@ -41,11 +70,13 @@ const Contact: React.FC = () => {
                       <MapPin className="h-6 w-6" />
                     </div>
                     <div>
-                      <p className="font-bold text-gray-800 mb-1">Ubicación</p>
+                      <p className="font-bold text-gray-800 mb-1">Ubicación Consultorio</p>
                       <p className="text-gray-600">
-                        Villavicencio, Barrio Morichal (Cra 20A #38A-08)
+                        Villavicencio, Meta
+                        <br />
+                        Barrio Morichal (Cra 20A #38A-08)
                       </p>
-                      <p className="text-sm text-gray-500 mt-1">También en Tolima y Huila</p>
+                      <p className="text-sm text-gray-500 mt-1">También visitamos Tolima y Huila</p>
                     </div>
                   </div>
 
@@ -72,13 +103,13 @@ const Contact: React.FC = () => {
                   allowFullScreen={true} 
                   loading="lazy" 
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Ubicación Don Alfonso Alvira"
+                  title="Ubicación Don Alfonso Alvira Villavicencio"
                 ></iframe>
               </div>
             </div>
 
             {/* Direct WhatsApp Action */}
-            <div className="bg-white p-8 rounded-xl shadow-lg border border-green-100 flex flex-col items-center text-center h-full justify-center">
+            <div className="bg-white p-8 rounded-xl shadow-lg border border-green-100 flex flex-col items-center text-center h-full justify-center transform hover:scale-[1.02] transition-transform">
               <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mb-6 animate-pulse">
                 <FaWhatsapp className="h-10 w-10 text-green-600" />
               </div>
@@ -88,21 +119,21 @@ const Contact: React.FC = () => {
               </h3>
               
               <p className="text-gray-600 mb-8 max-w-md">
-                La forma más rápida de obtener tu cita es escribiéndonos directamente por WhatsApp. Don Alfonso o su equipo te responderán a la brevedad.
+                Agenda tu cita con el sobandero en Villavicencio con 43 años de experiencia. Don Alfonso te responderá personalmente.
               </p>
               
               <Button 
                 size="lg" 
-                href="https://wa.me/573202168589?text=Hola,%20quisiera%20agendar%20una%20cita%20con%20Don%20Alfonso." 
+                href="https://wa.me/573202168589?text=Hola,%20Don%20Alfonso,%20quisiera%20agendar%20una%20cita%20en%20Villavicencio." 
                 external
                 className="w-full bg-green-600 hover:bg-green-700 text-white shadow-xl py-4 text-lg"
               >
                 <FaWhatsapp className="mr-2 h-6 w-6" />
-                Chatear en WhatsApp
+                Agendar Cita por WhatsApp
               </Button>
               
               <p className="mt-6 text-sm text-gray-500">
-                Al hacer clic, se abrirá WhatsApp con un mensaje predefinido.
+                Clic para abrir chat directo. Sin esperas.
               </p>
             </div>
           </div>
