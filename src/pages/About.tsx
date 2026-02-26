@@ -28,8 +28,8 @@ const About: React.FC = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Sobre Don Alfonso Alvira - Sobandero con 43 Años de Experiencia</title>
-        <meta name="description" content="Conozca a Don Alfonso Alvira, sobandero tradicional en Villavicencio. Más de 4 décadas tratando dolor de espalda, lesiones y cuajo con terapias manuales." />
+        <title>Don Alfonso Alvira: Sobandero Tradicional en Villavicencio | 43 años</title>
+        <meta name="description" content="Conoce a Don Alfonso Alvira, sobandero en Meta con 43 años de experiencia. Especialista en alineación de columna vertebral, cuajo y terapias manuales en Villavicencio." />
         <link rel="canonical" href="https://alfonsoalvira.vendo365.com/about" />
         <script type="application/ld+json">
           {JSON.stringify(personSchema)}
@@ -62,7 +62,11 @@ const About: React.FC = () => {
                 <span>43 Años de Experiencia</span>
               </div>
               
-              <h2 className="text-3xl lg:text-4xl font-serif font-bold text-gray-900 leading-tight">
+              <h1 className="text-4xl lg:text-5xl font-serif font-bold text-gray-900 leading-tight">
+                Don Alfonso Alvira: Sobandero Tradicional en Villavicencio
+              </h1>
+              
+              <h2 className="text-2xl font-bold text-green-700">
                 Una Vida Dedicada a Sanar con las Manos
               </h2>
               

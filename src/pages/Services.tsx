@@ -85,8 +85,8 @@ const Services: React.FC = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Servicios de Sobandero y Alineación de Columna en Villavicencio</title>
-        <meta name="description" content="Terapias manuales en Villavicencio: alineación de columna, tratamiento de cuajo, esguinces y dolor muscular. Método tradicional de 3 sesiones con Don Alfonso Alvira." />
+        <title>Servicios de Terapia Manual en Villavicencio | Alineación de Columna | Cuajo</title>
+        <meta name="description" content="Servicios de sobandero en Villavicencio: alineación de columna, cuajo, esguinces y terapias manuales. Método de 3 sesiones con Don Alfonso Alvira, 43 años de experiencia." />
         <link rel="canonical" href="https://alfonsoalvira.vendo365.com/services" />
         <script type="application/ld+json">
           {JSON.stringify(serviceSchema)}
@@ -99,8 +99,11 @@ const Services: React.FC = () => {
             <h1 className="text-4xl lg:text-5xl font-serif font-bold text-primary mb-6">
               Servicios de Terapia Manual en Villavicencio
             </h1>
+            <h2 className="text-2xl font-bold text-green-700 mb-4">
+              Especialidades del Sobandero Don Alfonso
+            </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Como sobandero tradicional, ofrezco un enfoque integral para recuperar su salud. Desde la <strong>alineación de columna</strong> hasta el tratamiento del "cuajo", cada terapia es personalizada.
+              Como sobandero tradicional, ofrezco un enfoque integral para recuperar su salud. Desde la <strong>alineación de columna</strong> hasta el tratamiento del "cuajo", cada terapia es personalizada para su necesidad específica en Villavicencio.
             </p>
           </div>
 

@@ -26,8 +26,8 @@ const Contact: React.FC = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Contacto Don Alfonso Alvira | Sobandero en Villavicencio</title>
-        <meta name="description" content="Agenda tu cita con Don Alfonso Alvira, sobandero en Villavicencio con 43 años de experiencia. Ubicado en Barrio Morichal. WhatsApp 3202168589." />
+        <title>Agenda Cita | Don Alfonso Alvira Villavicencio, Meta | WhatsApp 3202168589</title>
+        <meta name="description" content="Contacta a Don Alfonso Alvira en Villavicencio. Agendas citas por WhatsApp. Ubicado en Barrio Morichal. Sobandero con 43 años, especialista en alineación de columna y cuajo." />
         <link rel="canonical" href="https://alfonsoalvira.vendo365.com/contact" />
         <script type="application/ld+json">
           {JSON.stringify(contactSchema)}
@@ -38,10 +38,10 @@ const Contact: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h1 className="text-4xl lg:text-5xl font-serif font-bold text-primary mb-6">
-              Contáctanos en Villavicencio
+              Contacta al Sobandero Don Alfonso Alvira en Villavicencio
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Estamos aquí para ayudarte a recuperar tu movilidad. Agenda tu cita con el sobandero de confianza del Meta.
+              Agenda tu cita con <strong>Don Alfonso Alvira</strong>, el sobandero de confianza en <strong>Villavicencio, Meta</strong>. Especialista en <strong>alineación de columna</strong> y <strong>cuajo</strong>. 43 años de experiencia. Respuesta inmediata por WhatsApp.
             </p>
           </div>
 
