@@ -1,0 +1,104 @@
+{
+  "hero": {
+    "title": "¿Llevas años con dolor de espalda y ya no sabes qué hacer?",
+    "subtitle": "Recupera tu movilidad y bienestar con el método tradicional de Don Alfonso Alvira. Sin promesas vacías, solo experiencia y resultados.",
+    "cta": "Quiero agendar mi cita por WhatsApp"
+  },
+  "authority": {
+    "headline": "Tu terapeuta de confianza",
+    "subheadline": "43 años ayudando a personas a recuperar su movilidad",
+    "paragraphs": [
+      "Durante más de cuatro décadas me he dedicado a tratar problemas de columna, lesiones musculares y dolores que muchas personas han soportado durante años.",
+      "Mi trabajo no es solo aliviar el dolor. Busco el origen del problema para ayudarle a recuperar estabilidad, movilidad y calidad de vida.",
+      "Combino técnicas tradicionales de alineación y “cuajo” con experiencia práctica acumulada durante 43 años atendiendo pacientes reales.",
+      "He tenido el privilegio de acompañar a miles de personas en su proceso de recuperación, siempre con un trato humano, cercano y honesto.",
+      "Porque cuando el dolor limita su vida, lo más importante es ponerse en manos de alguien con experiencia."
+    ],
+    "specialties": [
+      "Columna Vertebral",
+      "Tronchaduras",
+      "Lastimaduras",
+      "Tendones y Músculos"
+    ]
+  },
+  "problem": {
+    "headline": "El dolor no es normal, y no tienes que vivir con él",
+    "description": "Ignorar ese dolor en la espalda o esa dificultad para moverte puede llevar a consecuencias graves. La rigidez, la dependencia de otros para tareas básicas y la pérdida de calidad de vida son realidades que muchos enfrentan por no tratar sus dolencias a tiempo."
+  },
+  "solution": {
+    "headline": "Un Método Probado: 3 Días para Tu Recuperación",
+    "description": "El tratamiento de Don Alfonso no es una sesión aislada. Es un proceso integral de tres terapias consecutivas (hoy, mañana y pasado mañana) diseñado para maximizar la recuperación.",
+    "benefits": [
+      "Terapia manual profunda y focalizada",
+      "Acompañamiento constante durante el proceso",
+      "Resultados tangibles desde la primera sesión"
+    ],
+    "note": "El éxito del tratamiento depende también de tu disciplina y cuidado durante estos tres días."
+  },
+  "howItWorks": {
+    "headline": "Tu Camino hacia la Recuperación en 4 Pasos",
+    "steps": [
+      {
+        "title": "Paso 1: Contacto",
+        "description": "Escríbenos por WhatsApp para agendar tu cita."
+      },
+      {
+        "title": "Paso 2: Evaluación",
+        "description": "Primera sesión de terapia manual y diagnóstico."
+      },
+      {
+        "title": "Paso 3: Tratamiento",
+        "description": "Seguimiento diario por 3 días consecutivos."
+      },
+      {
+        "title": "Paso 4: Cuidado",
+        "description": "Sigue las indicaciones de reposo y disciplina."
+      }
+    ]
+  },
+  "videos": [
+    {
+      "id": "2wXf42jdbz0",
+      "title": "Conoce a Don Alfonso",
+      "type": "short"
+    },
+    {
+      "id": "Fg95g1p0aWk",
+      "title": "Recomendaciones Vitales",
+      "type": "short"
+    },
+    {
+      "id": "HUFPBvf4pCM",
+      "title": "Testimonio Real: Recuperación",
+      "type": "short"
+    },
+    {
+      "id": "E3fvmlgbbCg",
+      "title": "Más sobre el tratamiento",
+      "type": "video"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Sra. Marta",
+      "condition": "Recuperación tras trombosis",
+      "text": "No podía levantar el brazo ni pararme de la cama. Después de las terapias con Don Alfonso, recuperé la movilidad y volví a caminar. Gracias a Dios y a sus manos."
+    },
+    {
+      "id": 2,
+      "name": "Familia de Paciente",
+      "condition": "Limitación de movilidad por 11 años",
+      "text": "Llevaba 11 años sin poder mover el brazo izquierdo. Con solo tres terapias, recuperó la movilidad y mejoró su estabilidad al caminar. Estamos muy agradecidos."
+    }
+  ],
+  "locations": {
+    "main": "Villavicencio, Barrio Morichal (Cra 20A #38A-08)",
+    "others": [
+      "Santa Isabel (Tolima)",
+      "Alto del Fisol",
+      "Ibagué",
+      "La Plata (Huila)"
+    ]
+  }
+}

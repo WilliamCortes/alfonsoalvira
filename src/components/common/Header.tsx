@@ -11,7 +11,6 @@ const Header: React.FC = () => {
     { label: 'Inicio', path: '/' },
     { label: 'Sobre Mí', path: '/about' },
     { label: 'Servicios', path: '/services' },
-    { label: 'Productos', path: '/products' },
     { label: 'Contacto', path: '/contact' },
   ];
 
@@ -24,7 +23,7 @@ const Header: React.FC = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <span className="font-serif text-xl font-bold text-primary md:text-2xl">
-              Alfonso Alvira
+              Alfonso Alvira Yasno
             </span>
           </Link>
 

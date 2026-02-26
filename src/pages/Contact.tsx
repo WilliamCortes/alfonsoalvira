@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout/Layout';
-import ContactForm from '../components/contact/ContactForm';
-import { Phone, MapPin, Clock, Mail } from 'lucide-react';
+import { Phone, MapPin, Clock, Mail, MessageCircle } from 'lucide-react';
+import Button from '../components/common/Button';
 
 const Contact: React.FC = () => {
   return (
@@ -11,11 +11,11 @@ const Contact: React.FC = () => {
           <div className="text-center mb-16">
             <h1 className="text-4xl lg:text-5xl font-serif font-bold text-primary mb-6">Contáctanos</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Estamos aquí para ayudarte. Agenda tu cita o realiza tus consultas a través de nuestros canales de atención.
+              Estamos aquí para ayudarte. Agenda tu cita o realiza tus consultas directamente con nosotros.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
             {/* Contact Info */}
             <div className="space-y-8">
               <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
@@ -42,9 +42,9 @@ const Contact: React.FC = () => {
                     <div>
                       <p className="font-bold text-gray-800 mb-1">Ubicación</p>
                       <p className="text-gray-600">
-                        Colombia
+                        Villavicencio, Barrio Morichal (Cra 20A #38A-08)
                       </p>
-                      <p className="text-sm text-gray-500 mt-1">Atención presencial con cita previa</p>
+                      <p className="text-sm text-gray-500 mt-1">También en Tolima y Huila</p>
                     </div>
                   </div>
 
@@ -71,18 +71,48 @@ const Contact: React.FC = () => {
                 </div>
               </div>
 
-              {/* Map Placeholder */}
-              <div className="bg-gray-200 rounded-xl h-64 w-full flex items-center justify-center text-gray-500">
-                <div className="text-center">
-                  <MapPin className="h-12 w-12 mx-auto mb-2 opacity-50" />
-                  <p>Mapa de Ubicación</p>
-                </div>
+              {/* Google Maps Embed */}
+              <div className="rounded-xl overflow-hidden h-64 w-full shadow-sm border border-gray-200">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.417469568902!2d-73.62624592432421!3d4.13799434627721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3e2e7684e5c5f5%3A0x2895428d8266c647!2sCra.%2020a%20%23%2020D-38%2C%20Villavicencio%2C%20Meta!5e0!3m2!1ses!2sco!4v1772080690953!5m2!1ses!2sco" 
+                  width="100%" 
+                  height="100%" 
+                  style={{ border: 0 }} 
+                  allowFullScreen={true} 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Ubicación Don Alfonso Alvira"
+                ></iframe>
               </div>
             </div>
 
-            {/* Contact Form */}
-            <div>
-              <ContactForm />
+            {/* Direct WhatsApp Action */}
+            <div className="bg-white p-8 rounded-xl shadow-lg border border-green-100 flex flex-col items-center text-center h-full justify-center">
+              <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mb-6 animate-pulse">
+                <MessageCircle className="h-10 w-10 text-green-600" />
+              </div>
+              
+              <h3 className="text-2xl font-serif font-bold text-gray-900 mb-4">
+                ¿Listo para Agendar?
+              </h3>
+              
+              <p className="text-gray-600 mb-8 max-w-md">
+                La forma más rápida de obtener tu cita es escribiéndonos directamente por WhatsApp. Don Alfonso o su equipo te responderán a la brevedad.
+              </p>
+              
+              <Button 
+                size="lg" 
+                href="https://wa.me/573202168589?text=Hola,%20quisiera%20agendar%20una%20cita%20con%20Don%20Alfonso." 
+                external
+                className="w-full bg-green-600 hover:bg-green-700 text-white shadow-xl py-4 text-lg"
+              >
+                <Phone className="mr-2 h-6 w-6" />
+                Chatear en WhatsApp
+              </Button>
+              
+              <p className="mt-6 text-sm text-gray-500">
+                Al hacer clic, se abrirá WhatsApp con un mensaje predefinido.
+              </p>
             </div>
           </div>
         </div>
