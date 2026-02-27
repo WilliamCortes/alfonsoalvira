@@ -15,7 +15,7 @@ const SeoLanding: React.FC = () => {
     "@graph": [
       {
         "@type": "LocalBusiness",
-        "name": "Don Alfonso Alvira - Sobandero y Terapias de Columna",
+        "name": "Don Alfonso Alvira - Terapeuta Especialista en Columna Vertebral",
         "image": `https://alfonsoalvira.vendo365.com${alfonsoProfile}`,
         "telephone": "+573202168589",
         "url": "https://alfonsoalvira.vendo365.com",
@@ -52,10 +52,10 @@ const SeoLanding: React.FC = () => {
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "¿Dónde encontrar un sobandero en Villavicencio de confianza?",
+            "name": "¿Dónde encontrar un terapeuta especialista en columna en Villavicencio de confianza?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Don Alfonso Alvira atiende en el Barrio Morichal de Villavicencio (Cra 20A #38A-08). Con 43 años de experiencia, es referente en terapias manuales y alineación de columna en el Meta."
+              "text": "Don Alfonso Alvira atiende en el Barrio Morichal de Villavicencio (Cra 20A #38A-08). Con 43 años de experiencia como terapeuta especialista, es referente en terapias manuales, alineación de columna y técnicas tradicionales llaneras en el Meta."
             }
           },
           {
@@ -98,14 +98,14 @@ const SeoLanding: React.FC = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Don Alfonso Alvira: Sobandero y Columna en Villavicencio</title>
-        <meta name="description" content="Don Alfonso Alvira, sobandero en Villavicencio con 43 años de experiencia. Especialista en columna, cuajo y terapias manuales. ¡Agenda al 3202168589!" />
+        <title>Don Alfonso Alvira: Terapeuta Especialista en Columna Villavicencio</title>
+        <meta name="description" content="Don Alfonso Alvira, terapeuta especialista en columna en Villavicencio con 43 años de experiencia. Especialista en alineación manual, cuajo y terapias manuales. ¡Agenda al 3202168589!" />
         <link rel="canonical" href="https://alfonsoalvira.vendo365.com/don-alfonso-alvira-sobandero-villavicencio" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://alfonsoalvira.vendo365.com/don-alfonso-alvira-sobandero-villavicencio" />
-        <meta property="og:title" content="Don Alfonso Alvira: Sobandero en Villavicencio y Columna" />
+        <meta property="og:title" content="Don Alfonso Alvira: Terapeuta Especialista en Columna Villavicencio" />
         <meta property="og:description" content="Recupera tu movilidad con Don Alfonso Alvira. 43 años de experiencia en terapias manuales de columna en Villavicencio, Meta." />
         <meta property="og:image" content={`https://alfonsoalvira.vendo365.com${alfonsoProfile}`} />
 
@@ -122,10 +122,10 @@ const SeoLanding: React.FC = () => {
             <div className="flex-1 space-y-6">
               <div className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full font-semibold text-sm">
                 <MapPin className="w-4 h-4" />
-                Sobandero en Villavicencio, Meta
+                Terapeuta de columna en Villavicencio, Meta
               </div>
               <h1 className="text-3xl lg:text-5xl font-serif font-bold text-gray-900 leading-tight">
-                Don Alfonso Alvira: Sobandero y Especialista en Columna en Villavicencio
+                Don Alfonso Alvira: Terapeuta y Especialista en Columna en Villavicencio
               </h1>
               <p className="text-xl text-gray-600">
                 Experiencia, tradición y manos que curan. Más de 43 años ayudando a las familias del Meta a recuperar su bienestar con terapias naturales.
@@ -141,7 +141,7 @@ const SeoLanding: React.FC = () => {
               <div className="absolute -inset-4 bg-green-100 rounded-full blur-3xl opacity-30"></div>
               <img 
                 src={alfonsoProfile} 
-                alt="Don Alfonso Alvira sobandero tradicional en Villavicencio realizando terapia de columna" 
+                alt="Don Alfonso Alvira Terapeuta tradicional en Villavicencio realizando terapia de columna" 
                 className="relative rounded-2xl shadow-2xl w-full max-w-md mx-auto object-cover object-[50%_25%] aspect-[3/4] border-4 border-white"
               />
             </div>
@@ -161,7 +161,7 @@ const SeoLanding: React.FC = () => {
           
           <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 space-y-6 text-gray-700 leading-relaxed text-lg">
             <p>
-              Soy <strong>Don Alfonso Alvira</strong>, y he dedicado mi vida al arte de la terapia manual. No soy un médico académico, soy un <strong>sobandero tradicional</strong> con 43 años de práctica empírica ininterrumpida.
+              Soy <strong>Don Alfonso Alvira</strong>, y he dedicado mi vida al arte de la terapia manual. No soy un médico académico, soy un <strong>Terapeuta tradicional</strong> con 43 años de práctica empírica ininterrumpida.
             </p>
             <p>
               Mi conocimiento proviene de la tradición oral y de la experiencia directa tratando casos reales: desde trabajadores del campo con dolor lumbar crónico hasta niños con "cuajo". Mi consultorio en el <strong>Barrio Morichal de Villavicencio</strong> es un espacio de sanación y respeto.
@@ -186,16 +186,16 @@ const SeoLanding: React.FC = () => {
         </div>
       </section>
 
-      {/* Sección Específica: Sobandero en Villavicencio */}
+      {/* Sección Específica: Terapeuta en Villavicencio */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="flex-1">
               <h2 className="text-3xl font-serif font-bold text-gray-900 mb-6">
-                ¿Busca un Sobandero en Villavicencio de Confianza?
+                ¿Busca un Terapeuta de columna en Villavicencio de Confianza?
               </h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                En nuestra cultura llanera, el sobandero juega un papel vital. Tratamos dolencias que a veces la medicina convencional pasa por alto o trata solo con analgésicos.
+                En nuestra cultura llanera, el terepeuta tradicional o sobandero juega un papel vital. Tratamos dolencias que a veces la medicina convencional pasa por alto o trata solo con analgésicos.
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">

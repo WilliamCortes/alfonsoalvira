@@ -9,13 +9,13 @@ const Services: React.FC = () => {
     {
       icon: <Activity className="h-8 w-8" />,
       title: "Alineación de Columna Vertebral",
-      description: "Tratamiento integral para dolores de espalda, lumbago, ciática y hernias discales. Utilizamos técnicas manuales de sobandero para realinear y descomprimir las vértebras.",
+      description: "Tratamiento integral para dolores de espalda, lumbago, ciática y hernias discales. Utilizamos técnicas manuales especializadas de alineación vertebral para realinear y descomprimir las vértebras.",
       benefits: ["Alivio del dolor lumbar", "Mejora de la postura", "Recuperación de movilidad", "Tratamiento no invasivo"]
     },
     {
       icon: <Disc className="h-8 w-8" />,
       title: "Tronchaduras y Desajustes",
-      description: "Corrección especializada de articulaciones desplazadas o bloqueadas. Técnica precisa de sobandero para restaurar la función articular inmediata en Villavicencio.",
+      description: "Corrección especializada de articulaciones desplazadas o bloqueadas. Técnica precisa de terapia manual para restaurar la función articular inmediata.",
       benefits: ["Corrección articular", "Alivio inmediato", "Reducción de inflamación", "Prevención de secuelas"]
     },
     {
@@ -59,7 +59,7 @@ const Services: React.FC = () => {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "serviceType": "Terapia Manual y Sobandero",
+      "serviceType": "Terapia Manual Especializada",
     "provider": {
       "@type": "LocalBusiness",
       "name": "Don Alfonso Alvira"
@@ -86,7 +86,7 @@ const Services: React.FC = () => {
     <Layout>
       <Helmet>
         <title>Servicios de Terapia Manual en Villavicencio | Alineación de Columna | Cuajo</title>
-        <meta name="description" content="Servicios de sobandero en Villavicencio: alineación de columna, cuajo, esguinces y terapias manuales. Método de 3 sesiones con Don Alfonso Alvira, 43 años de experiencia." />
+        <meta name="description" content="Servicios de terapia manual especializada en Villavicencio: alineación de columna, cuajo, esguinces y tratamientos manuales. Método de 3 sesiones con Don Alfonso Alvira, 43 años de experiencia." />
         <link rel="canonical" href="https://alfonsoalvira.vendo365.com/services" />
         <script type="application/ld+json">
           {JSON.stringify(serviceSchema)}
@@ -100,10 +100,10 @@ const Services: React.FC = () => {
               Servicios de Terapia Manual en Villavicencio
             </h1>
             <h2 className="text-2xl font-bold text-green-700 mb-4">
-              Especialidades del Sobandero Don Alfonso
+              Especialidades del Terapeuta Especialista Don Alfonso
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Como sobandero tradicional, ofrezco un enfoque integral para recuperar su salud. Desde la <strong>alineación de columna</strong> hasta el tratamiento del "cuajo", cada terapia es personalizada para su necesidad específica en Villavicencio.
+              Como terapeuta especialista en columna vertebral, ofrezco un enfoque integral para recuperar su salud. Desde la <strong>alineación de columna</strong> hasta el tratamiento del "cuajo" y técnicas manuales especializadas, cada terapia es personalizada para su necesidad específica en Villavicencio.
             </p>
           </div>
 
