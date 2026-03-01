@@ -42,15 +42,6 @@ export default {
         'lg': '0.75rem', // 12px
         'md': '0.5rem',  // 8px
       },
-      keyframes: {
-        bounceGentle: {
-          '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-6px)' },
-        },
-      },
-      animation: {
-        'bounce-gentle': 'bounceGentle 2.5s infinite',
-      },
     },
   },
   plugins: [],

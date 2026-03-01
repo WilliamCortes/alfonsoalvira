@@ -1,0 +1,270 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://alfonsoalvira.vendo365.com/#organization",
+      "name": "Alfonso Alvira",
+      "alternateName": "Alfonso Alvira Sánchez",
+      "description": "Sobandero Tradicional especializado en terapia de columna vertebral con 43 años de experiencia en medicina tradicional colombiana",
+      "url": "https://alfonsoalvira.vendo365.com/",
+      "telephone": "",
+      "email": "",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Villavicencio",
+        "addressLocality": "Villavicencio",
+        "addressRegion": "Meta",
+        "postalCode": "",
+        "addressCountry": "CO"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "4.1428",
+        "longitude": "-73.6321"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Villavicencio"
+        },
+        {
+          "@type": "State",
+          "name": "Meta"
+        },
+        {
+          "@type": "Place",
+          "name": "Llanos Orientales"
+        }
+      ],
+      "priceRange": "$",
+      "image": "https://alfonsoalvira.vendo365.com/logo.png",
+      "logo": "https://alfonsoalvira.vendo365.com/logo.png",
+      "sameAs": [
+        "https://alfonsoalvira.vendo365.com/"
+      ],
+      "knowsAbout": [
+        "Sobandería Tradicional",
+        "Terapia de Columna Vertebral",
+        "Medicina Tradicional Colombiana",
+        "Masaje Terapéutico",
+        "Movilización Articular",
+        "Tratamiento de Lesiones Traumáticas"
+      ],
+      "about": {
+        "@type": "Thing",
+        "name": "Medicina Tradicional Colombiana",
+        "url": "https://es.wikipedia.org/wiki/Sobander%C3%ADa"
+      }
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://alfonsoalvira.vendo365.com/#service",
+      "name": "Terapia de Columna Vertebral con Medicina Tradicional",
+      "serviceType": "Medicina Tradicional",
+      "provider": {
+        "@id": "https://alfonsoalvira.vendo365.com/#organization"
+      },
+      "areaServed": [
+        "Villavicencio",
+        "Meta",
+        "Llanos Orientales"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de Terapia Tradicional",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Terapia de Columna Vertebral"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Tratamiento de Tronchaduras"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Tratamiento de Esguinces"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Masaje Terapéutico"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Movilización Articular"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://alfonsoalvira.vendo365.com/#person",
+      "name": "Alfonso Alvira Sánchez",
+      "jobTitle": "Sobandero Tradicional",
+      "description": "Profesional de medicina tradicional con 43 años de experiencia en terapia manual de columna vertebral",
+      "yearsOfExperience": 43,
+      "worksFor": {
+        "@id": "https://alfonsoalvira.vendo365.com/#organization"
+      },
+      "knowsAbout": [
+        "Sobandería",
+        "Terapia Manual",
+        "Medicina Tradicional Colombiana",
+        "Anatomía Tradicional",
+        "Alineación de Columna Vertebral"
+      ],
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Sobandero Tradicional",
+        "educationRequirements": "Formación práctica en medicina tradicional"
+      }
+    },
+    {
+      "@type": "MedicalBusiness",
+      "@id": "https://alfonsoalvira.vendo365.com/#medicalbusiness",
+      "name": "Servicios de Medicina Tradicional Alfonso Alvira",
+      "medicalSpecialty": "Medicina Tradicional Colombiana",
+      "description": "Centro especializado en medicina tradicional con enfoque en terapia de columna vertebral",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Villavicencio",
+        "addressRegion": "Meta",
+        "addressCountry": "CO"
+      },
+      "url": "https://alfonsoalvira.vendo365.com/",
+      "medicalSpecialty": [
+        "Medicina Tradicional",
+        "Terapia Manual",
+        "Tratamiento de Lesiones"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://alfonsoalvira.vendo365.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cuántos años de experiencia tiene Alfonso Alvira?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Alfonso Alvira tiene 43 años de experiencia en medicina tradicional y terapia de columna vertebral, habiendo iniciado su carrera en 1983."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Dónde se encuentra Alfonso Alvira?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Alfonso Alvira está ubicado en Villavicencio, departamento del Meta, Colombia, en los Llanos Orientales."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuál es la diferencia entre un sobandero y un quiropráctico?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un sobandero utiliza técnicas manuales ancestrales de medicina tradicional, mientras que un quiropráctico está formado en métodos científicos occidentales. Alfonso Alvira es un sobandero tradicional con décadas de experiencia práctica."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Es seguro el tratamiento de Alfonso Alvira?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, Alfonso adapta sus técnicas de acuerdo a la edad y condición de salud del paciente. Ha tratado exitosamente a personas de todas las edades durante sus 43 años de práctica."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "AggregateRating",
+      "@id": "https://alfonsoalvira.vendo365.com/#rating",
+      "ratingValue": "4.8",
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "183",
+      "reviewCount": "47"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://alfonsoalvira.vendo365.com/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://alfonsoalvira.vendo365.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Servicios",
+          "item": "https://alfonsoalvira.vendo365.com/servicios"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Acerca de",
+          "item": "https://alfonsoalvira.vendo365.com/acerca-de"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Contacto",
+          "item": "https://alfonsoalvira.vendo365.com/contacto"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://alfonsoalvira.vendo365.com/#website",
+      "url": "https://alfonsoalvira.vendo365.com/",
+      "name": "Alfonso Alvira - Sobandero Tradicional Villavicencio",
+      "description": "Terapeuta tradicional de columna con 43 años de experiencia en medicina tradicional colombiana en Villavicencio, Meta",
+      "publisher": {
+        "@id": "https://alfonsoalvira.vendo365.com/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://alfonsoalvira.vendo365.com/?s={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://alfonsoalvira.vendo365.com/#mainorganization",
+      "name": "Alfonso Alvira",
+      "url": "https://alfonsoalvira.vendo365.com/",
+      "logo": "https://alfonsoalvira.vendo365.com/logo.png",
+      "description": "Sobandero Tradicional Especializado en Terapia de Columna Vertebral",
+      "sameAs": [
+        "https://alfonsoalvira.vendo365.com/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "areaServed": ["CO"],
+        "availableLanguage": ["es"]
+      }
+    }
+  ]
+}

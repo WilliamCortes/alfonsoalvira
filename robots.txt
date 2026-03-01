@@ -1,0 +1,190 @@
+# robots.txt - Alfonso Alvira | Sobandero Tradicional Villavicencio
+# Optimizado para buscadores y motores de IA
+# Última actualización: 2026-03-01
+
+# ============================================================
+# SECCIÓN 1: PERMITIR ACCESO A BUSCADORES PRINCIPALES
+# ============================================================
+# Googlebot - Google Search
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bingbot - Microsoft Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Slurp - Yahoo Search
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+# DuckDuckBot - DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+# Baiduspider - Baidu (búsquedas en chino)
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+# ============================================================
+# SECCIÓN 2: PERMITIR ACCESO A CRAWLERS DE MODELOS DE IA
+# ============================================================
+# Generative Engine Optimization (GEO) - Acceso completo
+
+# OpenAI GPTBot
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 1
+
+# Anthropic Claude
+User-agent: Claude-Web
+Allow: /
+Crawl-delay: 1
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+Crawl-delay: 1
+
+# Anthropic AI (crawlers adicionales)
+User-agent: Anthropic-AI
+Allow: /
+Crawl-delay: 1
+
+# Cohere AI
+User-agent: cohere-ai
+Allow: /
+Crawl-delay: 1
+
+# ByteDance Bytespider
+User-agent: Bytespider
+Allow: /
+Crawl-delay: 2
+
+# Meta/Facebook AI
+User-agent: facebookexternalhit
+Allow: /
+Crawl-delay: 1
+
+# Googlebot-Image
+User-agent: Googlebot-Image
+Allow: /
+Crawl-delay: 2
+
+# Googlebot-Video
+User-agent: Googlebot-Video
+Allow: /
+Crawl-delay: 2
+
+# ============================================================
+# SECCIÓN 3: BLOQUEAR BOTS MALICIOSOS Y SCRAPERS
+# ============================================================
+
+# Scrapers y bots maliciosos conocidos
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MojeekBot
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: YandexMobileBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: SocksBot
+Disallow: /
+
+User-agent: Jyxobot
+Disallow: /
+
+User-agent: SISTRIX
+Disallow: /
+
+User-agent: Screaming Frog SEO Spider
+Disallow: /
+
+# Scrapers y bots no identificados
+User-agent: MicroMessenger
+Disallow: /
+
+User-agent: ZoominfoBot
+Disallow: /
+
+# ============================================================
+# SECCIÓN 4: CONFIGURACIÓN GLOBAL Y DIRECTORIOS ESPECÍFICOS
+# ============================================================
+
+# Permitir todo a User-agents no especificados (por defecto)
+User-agent: *
+Allow: /
+Crawl-delay: 2
+
+# Bloquear directorios específicos (si existen)
+Disallow: /admin/
+Disallow: /.env
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /dist/
+Disallow: /build/
+Disallow: /__vite__/
+
+# Permitir acceso a assets estáticos
+Allow: /public/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.png
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.webp
+Allow: /*.woff
+Allow: /*.woff2
+
+# ============================================================
+# SECCIÓN 5: SITEMAPS Y REFERENCIAS IMPORTANTES
+# ============================================================
+
+# Sitemap XML (si existe)
+Sitemap: https://alfonsoalvira.vendo365.com/sitemap.xml
+
+# LLMs.txt - Información optimizada para modelos de IA
+# Contiene descripción clara del negocio, servicios y contacto
+Sitemap: https://alfonsoalvira.vendo365.com/llms.txt
+
+# Feed RSS (si existe)
+Sitemap: https://alfonsoalvira.vendo365.com/rss.xml
+
+# ============================================================
+# SECCIÓN 6: POLÍTICAS ADICIONALES
+# ============================================================
+
+# Request-rate: especifica máximo de requests por segundo
+# Request-rate: 1/10 significa 1 request cada 10 segundos
+
+# Comentario final
+# Este archivo ha sido optimizado para:
+# - Máxima indexación en Google, Bing y DuckDuckGo
+# - Acceso completo a modelos de IA (ChatGPT, Claude, Perplexity)
+# - Generative Engine Optimization (GEO)
+# - Bloqueo de scrapers maliciosos
+# - Facilitar descubrimiento por agentes inteligentes

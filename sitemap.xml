@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0">
+  
+  <!-- PÁGINA DE INICIO - Entrada Principal -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- PÁGINA DE SERVICIOS - Alta Prioridad -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/servicios</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- SERVICIOS INDIVIDUALES - Terapia de Columna -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/servicios/terapia-columna</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- SERVICIOS INDIVIDUALES - Tratamiento Tronchaduras -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/servicios/tronchaduras</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- SERVICIOS INDIVIDUALES - Tratamiento Esguinces -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/servicios/esguinces</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- SERVICIOS INDIVIDUALES - Masaje Terapéutico -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/servicios/masaje-terapeutico</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- SERVICIOS INDIVIDUALES - Movilización Articular -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/servicios/movilizacion-articular</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- SERVICIOS INDIVIDUALES - Medicina Tradicional -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/servicios/medicina-tradicional</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- PÁGINA ACERCA DE - Experiencia y Credibilidad -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/acerca-de</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- PÁGINA DE CONTACTO - Importante para Conversión -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/contacto</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- PÁGINA DE TESTIMONIOS/RESEÑAS -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/testimonios</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- PÁGINA DE PREGUNTAS FRECUENTES -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/faq</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- BLOG/RECURSOS - Medicina Tradicional Colombiana -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/blog</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- POST DE BLOG 1 - Qué es la Sobandería -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/blog/que-es-sobanderia</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- POST DE BLOG 2 - Beneficios Medicina Tradicional -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/blog/beneficios-medicina-tradicional</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- POST DE BLOG 3 - Problemas de Columna -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/blog/problemas-columna-vertebral</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- POST DE BLOG 4 - Cuidado Espalda -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/blog/cuidado-espalda</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- PÁGINA DE GALERÍA/FOTOS -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/galeria</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <!-- PÁGINA DE HORARIOS Y UBICACIÓN -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/ubicacion-horarios</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- PÁGINA LEGAL - POLÍTICA DE PRIVACIDAD -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/politica-privacidad</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+  </url>
+
+  <!-- PÁGINA LEGAL - TÉRMINOS Y CONDICIONES -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/terminos-condiciones</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+  </url>
+
+  <!-- PÁGINA LEGAL - AVISO LEGAL -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/aviso-legal</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+  </url>
+
+  <!-- ARCHIVOS TÉCNICOS IMPORTANTES PARA IA Y BUSCADORES -->
+  <!-- robots.txt - Configuración para crawlers -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/robots.txt</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+  <!-- llms.txt - Optimizado para modelos de IA (LLMs) -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/llms.txt</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- agents.md - Instrucciones para agentes de IA -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/agents.md</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- schema.json - Datos estructurados para búsqueda semántica -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/schema.json</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- PAGE LOCALES EN SPANISH PARA BÚSQUEDA LOCAL -->
+  <!-- Página de Villavicencio Meta -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/villavicencio-meta</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Página de Llanos Orientales -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/llanos-orientales</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- PÁGINAS DE KEYWORDS PRINCIPALES PARA SEO LOCAL -->
+  <!-- Sobandero Villavicencio -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/sobandero-villavicencio</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Terapeuta Columna Meta -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/terapeuta-columna-meta</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Medicina Tradicional Villavicencio -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/medicina-tradicional-villavicencio</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Terapia Manual Colombia -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/terapia-manual-colombia</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- Videos - Alto valor para engagement -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/videos</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Caso de Estudio 1 -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/casos-exito/hernia-discal-recuperacion</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- Caso de Estudio 2 -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/casos-exito/dolor-espalda-cronico</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- Caso de Estudio 3 -->
+  <url>
+    <loc>https://alfonsoalvira.vendo365.com/casos-exito/lesion-deportiva</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+</urlset>
