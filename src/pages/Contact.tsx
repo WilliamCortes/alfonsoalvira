@@ -1,6 +1,5 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import Layout from '../components/layout/Layout';
 import { Phone, MapPin, Clock } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
 import Button from '../components/common/Button';
@@ -24,7 +23,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <Layout>
+    <>
       <Helmet>
         <title>Agenda Cita | Don Alfonso Alvira Villavicencio, Meta | WhatsApp 3202168589</title>
         <meta name="description" content="Contacta a Don Alfonso Alvira, terapeuta especialista en columna en Villavicencio. Agenda citas por WhatsApp. Ubicado en Barrio Morichal. 43 años de experiencia en alineación de columna y cuajo." />
@@ -139,7 +138,7 @@ const Contact: React.FC = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </>
   );
 };
 

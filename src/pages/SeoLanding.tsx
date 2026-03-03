@@ -1,6 +1,5 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import Layout from '../components/layout/Layout';
 import { Phone, MapPin, Clock, Award, CheckCircle2, User, HeartPulse, Activity } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
 import Button from '../components/common/Button';
@@ -96,7 +95,7 @@ const SeoLanding: React.FC = () => {
   };
 
   return (
-    <Layout>
+    <>
       <Helmet>
         <title>Don Alfonso Alvira: Terapeuta Especialista en Columna Villavicencio</title>
         <meta name="description" content="Don Alfonso Alvira, terapeuta especialista en columna en Villavicencio con 43 años de experiencia. Especialista en alineación manual, cuajo y terapias manuales. ¡Agenda al 3202168589!" />
@@ -314,7 +313,7 @@ const SeoLanding: React.FC = () => {
           </p>
         </div>
       </section>
-    </Layout>
+    </>
   );
 };
 

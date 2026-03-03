@@ -3,14 +3,38 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- DNS Prefetch y Preconnect para recursos externos -->
+  <link rel="dns-prefetch" href="https://www.youtube.com" />
+  <link rel="dns-prefetch" href="https://i.ytimg.com" />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+
+  <link rel="preconnect" href="https://www.youtube.com" crossorigin />
+  <link rel="preconnect" href="https://i.ytimg.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Preload de recursos críticos - LCP image -->
+  <link rel="preload" href="/src/assets/banner.png" as="image" type="image/png" fetchpriority="high" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+
+  <!-- Google Verification -->
   <meta name="google-site-verification" content="KPfAXsevTawFAM73ZoUwrHYu-kR7I9-1x5Xv3CJuFnA" />
+
+  <!-- SEO Meta Tags -->
   <meta name="description"
     content="Don Alfonso Alvira - Terapeuta especialista en columna vertebral en Villavicencio, Meta. 43 años de experiencia en alineación manual, tronchaduras, cuajo. Terapias manuales sin cirugía. Agenda por WhatsApp." />
   <meta name="keywords"
     content="terapeuta columna villavicencio, don alfonso alvira, especialista manual meta, terapia de columna, cuajo villavicencio, alineación vertebral, tronchaduras, terapeuta villavicencio, terapeuta tradicional meta" />
   <meta name="robots" content="index, follow" />
+
+  <!-- Theme Color for Mobile -->
+  <meta name="theme-color" content="#047857" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
@@ -31,6 +55,58 @@
   <meta name="twitter:description"
     content="43 años como especialista en columna vertebral, alineación manual y terapias especializadas en Villavicencio, Meta. Soluciones reales sin cirugía." />
   <meta name="twitter:image" content="https://alfonsoalvira.vendo365.com/og-image.jpg" />
+
+  <!-- Critical CSS Inline para eliminar render-blocking -->
+  <style>
+    /* Critical CSS - Above the fold styles */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box
+    }
+
+    html {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.5;
+      -webkit-text-size-adjust: 100%
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #111827
+    }
+
+    #root {
+      min-height: 100vh
+    }
+
+    /* Loading skeleton */
+    .loading-skeleton {
+      animation: pulse 2s cubic-bezier(.4, 0, .6, 1) infinite;
+      background-color: #e5e7eb
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1
+      }
+
+      50% {
+        opacity: .5
+      }
+    }
+
+    /* Prevent layout shift */
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block
+    }
+  </style>
 
   <title>Terapeuta Especialista en Columna Villavicencio - Don Alfonso Alvira | Alineación Manual</title>
 </head>

@@ -9,7 +9,6 @@ import Testimonials from '../components/home/Testimonials';
 import VideoCarousel from '../components/home/VideoCarousel';
 import HowItWorks from '../components/home/HowItWorks';
 import FAQ from '../components/home/FAQ';
-import Layout from '../components/layout/Layout';
 import { MapPin } from 'lucide-react';
 import content from '../data/content.json';
 import alfonsoProfile from '/alfonso_la_cabana.jpg';
@@ -84,7 +83,7 @@ const Home: React.FC = () => {
   };
 
   return (
-    <Layout>
+    <>
       <Helmet>
         <title>Terapeuta Especialista en Columna | Don Alfonso Alvira | 43 años Villavicencio</title>
         <meta name="description" content="Especialista en columna vertebral, tronchaduras, lastimaduras y desgarres. Terapeuta manual Don Alfonso Alvira con 43 años en Villavicencio. Alineación, cuajo y terapias manuales sin cirugía. Agenda por WhatsApp." />
@@ -157,12 +156,12 @@ const Home: React.FC = () => {
       <Authority />
       <Problem />
       <Solution />
-      <VideoCarousel />
       <ServicesPreview />
-      <Testimonials />
       <HowItWorks />
+      <Testimonials />
+      <VideoCarousel />
       <FAQ />
-    </Layout>
+    </>
   );
 };
 

@@ -40,13 +40,17 @@ const Hero: React.FC = () => {
             </div>
           </div>
 
-          {/* Image */}
+          {/* Image - LCP con fetchpriority high */}
           <div className="flex-1 relative order-1 lg:order-2 w-full">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl transform rotate-1 hover:rotate-0 transition-all duration-500">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl transform rotate-1 hover:rotate-0 transition-all duration-500 aspect-[4/3]">
               <img 
-               src={banner}
+                src={banner}
                 alt="Don Alfonso Alvira - Especialista en Columna Vertebral, Villavicencio" 
-                className="w-full h-auto object-cover object-[50%_25%]"
+                className="w-full h-full object-cover object-[50%_25%]"
+                width="800"
+                height="600"
+                fetchPriority="high"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
               <div className="absolute bottom-4 left-4 right-4 text-white">

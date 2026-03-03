@@ -1,6 +1,5 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import Layout from '../components/layout/Layout';
 import ServiceCard from '../components/services/ServiceCard';
 import { Activity, User, Disc, Move, HeartPulse, Sparkles, Bandage, Stethoscope } from 'lucide-react';
 
@@ -83,7 +82,7 @@ const Services: React.FC = () => {
   };
 
   return (
-    <Layout>
+    <>
       <Helmet>
         <title>Servicios de Terapia Manual en Villavicencio | Alineación de Columna | Cuajo</title>
         <meta name="description" content="Servicios de terapia manual especializada en Villavicencio: alineación de columna, cuajo, esguinces y tratamientos manuales. Método de 3 sesiones con Don Alfonso Alvira, 43 años de experiencia." />
@@ -114,7 +113,7 @@ const Services: React.FC = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </>
   );
 };
 

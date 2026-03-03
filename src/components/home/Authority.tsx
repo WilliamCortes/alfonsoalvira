@@ -43,12 +43,16 @@ const Authority: React.FC = () => {
           </div>
 
           <div className="flex-1 relative">
-            {/* Don Alfonso's photo */}
+            {/* Don Alfonso's photo - Lazy loaded */}
              <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-xl bg-gray-200">
                 <img 
                   src={alfonsoProfile} 
                   alt="Don Alfonso Alvira" 
-                  className="object-cover object-[50%_25%] w-full h-full hover:scale-105 transition-transform duration-500" 
+                  className="object-cover object-[50%_25%] w-full h-full hover:scale-105 transition-transform duration-500"
+                  width="600"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
                 />
              </div>
              

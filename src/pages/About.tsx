@@ -1,6 +1,5 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import Layout from '../components/layout/Layout';
 import { Award, Users, Heart, MapPin } from 'lucide-react';
 import alfonso from '../assets/alfonso.png';
 import alfonsoProfile from '/alfonso_la_cabana.jpg';
@@ -26,7 +25,7 @@ const About: React.FC = () => {
   };
 
   return (
-    <Layout>
+    <>
       <Helmet>
         <title>Sobre Don Alfonso Alvira: Terapeuta Especialista en Columna | 43 años Villavicencio</title>
         <meta name="description" content="Conoce a Don Alfonso Alvira, terapeuta especialista en columna con 43 años de experiencia en Villavicencio, Meta. Experto en alineación vertebral, cuajo y recuperación funcional integral." />
@@ -104,7 +103,7 @@ const About: React.FC = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </>
   );
 };
 

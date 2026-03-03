@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { ChevronUp, ChevronDown, Volume2, VolumeX, Play } from 'lucide-react';
 import content from '../../data/content.json';
 
@@ -7,42 +7,65 @@ const VideoCarousel: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
+  const [isVisible, setIsVisible] = useState(false); // Lazy loading del iframe
 
   const touchStartY = useRef<number>(0);
   const touchEndY = useRef<number>(0);
   const playerRef = useRef<HTMLIFrameElement>(null);
+  const sectionRef = useRef<HTMLElement>(null);
 
   const videos = content.videos;
   const currentVideo = videos[currentIndex];
 
-  // Base URL for YouTube embed with JS API enabled
-  const embedUrl = `https://www.youtube.com/embed/${currentVideo.id}?enablejsapi=1&rel=0&modestbranding=1&controls=0&showinfo=0&fs=0&iv_load_policy=3&autoplay=1&mute=${isMuted ? '1' : '0'}&loop=1&playlist=${currentVideo.id}`;
+  // Intersection Observer para lazy loading del iframe
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1, rootMargin: '100px' }
+    );
 
-  const handleNext = () => {
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  // Base URL for YouTube embed with JS API enabled - solo cargar cuando es visible
+  const embedUrl = isVisible 
+    ? `https://www.youtube.com/embed/${currentVideo.id}?enablejsapi=1&rel=0&modestbranding=1&controls=0&showinfo=0&fs=0&iv_load_policy=3&autoplay=1&mute=${isMuted ? '1' : '0'}&loop=1&playlist=${currentVideo.id}`
+    : '';
+
+  const handleNext = useCallback(() => {
     setLoading(true);
     setCurrentIndex((prev) => (prev === videos.length - 1 ? 0 : prev + 1));
-  };
+  }, [videos.length]);
 
-  const handlePrev = () => {
+  const handlePrev = useCallback(() => {
     setLoading(true);
     setCurrentIndex((prev) => (prev === 0 ? videos.length - 1 : prev - 1));
-  };
+  }, [videos.length]);
 
-  const togglePlay = () => {
+  const togglePlay = useCallback(() => {
     setIsPlaying(!isPlaying);
     const message = isPlaying
       ? '{"event":"command","func":"pauseVideo","args":""}'
       : '{"event":"command","func":"playVideo","args":""}';
     playerRef.current?.contentWindow?.postMessage(message, '*');
-  };
+  }, [isPlaying]);
 
-  const toggleMute = () => {
+  const toggleMute = useCallback(() => {
     setIsMuted(!isMuted);
     const message = isMuted
       ? '{"event":"command","func":"unMute","args":""}'
       : '{"event":"command","func":"mute","args":""}';
     playerRef.current?.contentWindow?.postMessage(message, '*');
-  };
+  }, [isMuted]);
 
   // Touch handlers for swipe
   const onTouchStart = (e: React.TouchEvent) => {
@@ -75,7 +98,7 @@ const VideoCarousel: React.FC = () => {
   }, [currentIndex]);
 
   return (
-    <section className="bg-gray-900 py-8 min-h-screen flex flex-col justify-center items-center">
+    <section ref={sectionRef} className="bg-gray-900 py-8 min-h-screen flex flex-col justify-center items-center">
       <div className="container mx-auto px-4 flex flex-col items-center">
         <h2 className="mb-6 text-center text-2xl font-bold text-white md:text-3xl">
           Resultados Reales
@@ -95,18 +118,38 @@ const VideoCarousel: React.FC = () => {
             </div>
           )}
 
-          {/* YouTube Iframe Layer */}
-          <div className="absolute inset-0 z-0 h-full w-full pointer-events-none">
-            <iframe
-              ref={playerRef}
-              src={embedUrl}
-              className="h-full w-full object-cover"
-              title={currentVideo.title}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              onLoad={() => setLoading(false)}
-            />
-          </div>
+          {/* YouTube Iframe Layer - Solo carga cuando es visible */}
+          {isVisible && (
+            <div className="absolute inset-0 z-0 h-full w-full pointer-events-none">
+              <iframe
+                ref={playerRef}
+                src={embedUrl}
+                className="h-full w-full object-cover"
+                title={currentVideo.title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                loading="lazy"
+                onLoad={() => setLoading(false)}
+              />
+            </div>
+          )}
+
+          {/* Thumbnail Placeholder mientras no es visible */}
+          {!isVisible && (
+            <div 
+              className="absolute inset-0 z-0 h-full w-full bg-cover bg-center cursor-pointer"
+              style={{ 
+                backgroundImage: `url(https://i.ytimg.com/vi/${currentVideo.id}/maxresdefault.jpg)`,
+              }}
+              onClick={() => setIsVisible(true)}
+            >
+              <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                <div className="rounded-full bg-white/20 p-4 backdrop-blur-md animate-pulse">
+                  <Play size={48} className="text-white fill-current" />
+                </div>
+              </div>
+            </div>
+          )}
 
           {/* Overlay UI Layer */}
           <div className="absolute inset-0 z-10 flex flex-col justify-between bg-gradient-to-b from-black/30 via-transparent to-black/60 p-4">
@@ -126,7 +169,7 @@ const VideoCarousel: React.FC = () => {
               className="flex-grow flex items-center justify-center cursor-pointer"
               onClick={togglePlay}
             >
-              {!isPlaying && (
+              {!isPlaying && isVisible && (
                 <div className="rounded-full bg-white/20 p-4 backdrop-blur-md animate-pulse">
                   <Play size={48} className="text-white fill-current" />
                 </div>
