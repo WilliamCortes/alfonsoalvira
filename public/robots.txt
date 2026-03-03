@@ -1,6 +1,6 @@
-# robots.txt - Alfonso Alvira | Terapeuta Tradicional Villavicencio
-# Optimizado para buscadores y motores de IA
-# Última actualización: 2026-03-01
+# robots.txt - Alfonso Alvira | Sobandero Tradicional Villavicencio
+# Optimizado para Google, buscadores y modelos de IA
+# Última actualización: 2026-03-02
 
 # ============================================================
 # SECCIÓN 1: PERMITIR ACCESO A BUSCADORES PRINCIPALES
@@ -161,30 +161,30 @@ Allow: /*.woff
 Allow: /*.woff2
 
 # ============================================================
-# SECCIÓN 5: SITEMAPS Y REFERENCIAS IMPORTANTES
+# SECCIÓN 5: SITEMAPS Y REFERENCIAS PARA BUSCADORES
 # ============================================================
 
-# Sitemap XML (si existe)
+# Sitemap XML - Todas las páginas indexables del sitio
 Sitemap: https://alfonsoalvira.vendo365.com/sitemap.xml
 
-# LLMs.txt - Información optimizada para modelos de IA
-# Contiene descripción clara del negocio, servicios y contacto
+# agents.md - Instrucciones para agentes de IA y sistemas de recomendación
+Sitemap: https://alfonsoalvira.vendo365.com/agents.md
+
+# llms.txt - Información para modelos de lenguaje e IA generativa
 Sitemap: https://alfonsoalvira.vendo365.com/llms.txt
 
-# Feed RSS (si existe)
-Sitemap: https://alfonsoalvira.vendo365.com/rss.xml
-
 # ============================================================
-# SECCIÓN 6: POLÍTICAS ADICIONALES
+# SECCIÓN 6: NOTAS IMPORTANTES
 # ============================================================
 
-# Request-rate: especifica máximo de requests por segundo
-# Request-rate: 1/10 significa 1 request cada 10 segundos
-
-# Comentario final
-# Este archivo ha sido optimizado para:
-# - Máxima indexación en Google, Bing y DuckDuckGo
-# - Acceso completo a modelos de IA (ChatGPT, Claude, Perplexity)
-# - Generative Engine Optimization (GEO)
-# - Bloqueo de scrapers maliciosos
-# - Facilitar descubrimiento por agentes inteligentes
+# Este robots.txt está optimizado para:
+# ✓ Máxima visibilidad en Google, Bing, DuckDuckGo
+# ✓ Acceso completo a modelos de IA (GPT, Claude, Perplexity)
+# ✓ Generative Engine Optimization (GEO)
+# ✓ Indexación en sistemas de IA generativa
+# ✓ Protección contra scrapers maliciosos
+# ✓ Facilitar descubrimiento por agentes inteligentes
+#
+# Cambio importante: Reemplazar "Terapeuta Tradicional" por "Sobandero Tradicional"
+# Esto refleja con precisión la profesión de Alfonso Alvira según la medicina
+# tradicional colombiana y las instrucciones del archivo agents.md
