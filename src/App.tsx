@@ -12,7 +12,7 @@ function App() {
       <Route path="/about" element={<About />} />
       <Route path="/services" element={<Services />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="/don-alfonso-alvira-sobandero-villavicencio" element={<SeoLanding />} />
+      <Route path="/don-alfonso-alvira-terapeuta-villavicencio" element={<SeoLanding />} />
     </Routes>
   );
 }

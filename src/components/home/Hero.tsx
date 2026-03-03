@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl transform rotate-1 hover:rotate-0 transition-all duration-500">
               <img 
                src={banner}
-                alt="Don Alfonso Alvira Terapia" 
+                alt="Don Alfonso Alvira - Especialista en Columna Vertebral, Villavicencio" 
                 className="w-full h-auto object-cover object-[50%_25%]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>

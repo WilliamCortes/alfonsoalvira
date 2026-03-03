@@ -42,9 +42,9 @@ const About: React.FC = () => {
             {/* Image */}
             <div className="flex-1">
               <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[3/4] max-w-md mx-auto">
-                <img 
-                  src={alfonso} 
-                  alt="Don Alfonso Alvira Yasno - Terapeuta de columna en Villavicencio" 
+                <img
+                  src={alfonso}
+                  alt="Don Alfonso Alvira Yasno - Terapeuta de columna en Villavicencio"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
@@ -61,18 +61,18 @@ const About: React.FC = () => {
                 <Award className="w-4 h-4" />
                 <span>43 Años de Experiencia</span>
               </div>
-              
+
               <h1 className="text-4xl lg:text-5xl font-serif font-bold text-gray-900 leading-tight">
                 Don Alfonso Alvira: Terapeuta Especialista en Columna Villavicencio
               </h1>
-              
+
               <h2 className="text-2xl font-bold text-green-700">
                 Una Vida Dedicada a Sanar con las Manos
               </h2>
-              
+
               <div className="space-y-4 text-gray-700 leading-relaxed text-lg">
                 <p>
-                  Soy <strong>Don Alfonso Alvira</strong>, terapeuta especialista en columna vertebral conocido en Villavicencio y toda la región por mi trabajo con terapia manual especializada. Reconocido tradicionalmente como sobandero, durante más de 43 años he perfeccionado el arte de la alineación vertebral y la terapia manual.
+                  Soy <strong>Don Alfonso Alvira</strong>, terapeuta especialista en columna vertebral conocido en Villavicencio y toda la región por mi trabajo con terapia manual especializada. Durante más de 43 años he perfeccionado el arte de la alineación vertebral y la terapia manual.
                 </p>
                 <p>
                   Mi consultorio en el <strong>Barrio Morichal</strong> ha sido testigo de la recuperación de miles de personas que llegaron con dolores de columna, "tronchaduras", esguinces y el malestar del "cuajo".

@@ -6,33 +6,33 @@ const ServicesPreview: React.FC = () => {
   const services = [
     {
       icon: <Activity className="h-8 w-8" />,
-      title: "Columna Vertebral",
-      description: "Tratamientos especializados para dolor lumbar, hernias y alineación."
+      title: "Especialista en Columna Vertebral",
+      description: "Terapia manual especializada para dolor lumbar, hernias, desalineamientos y recuperación de movilidad."
     },
     {
       icon: <Disc className="h-8 w-8" />,
-      title: "Tronchaduras",
-      description: "Corrección de articulaciones y alivio inmediato del dolor."
+      title: "Tronchaduras: Corrección de Articulaciones",
+      description: "Corrección de tronchadas y articulaciones desplazadas con terapia manual inmediata y efectiva."
     },
     {
       icon: <Move className="h-8 w-8" />,
-      title: "Torceduras",
-      description: "Recuperación de esguinces y lesiones articulares recientes."
+      title: "Lastimaduras y Torceduras",
+      description: "Recuperación especializada de lastimaduras, esguinces y lesiones traumáticas de articulaciones."
     },
     {
       icon: <User className="h-8 w-8" />,
-      title: "Desgarres Musculares",
-      description: "Terapia para regeneración muscular y alivio de tensión."
+      title: "Desgarres y Lesiones Musculares",
+      description: "Terapia especializada para regeneración muscular, desgarres y alivio de tensión muscular profunda."
     },
     {
       icon: <HeartPulse className="h-8 w-8" />,
-      title: "Problemas de Tendones",
-      description: "Tratamiento para tendinitis y molestias crónicas."
+      title: "Problemas de Matriz y Bienestar",
+      description: "Tratamiento especializado para problemas de matriz, alineación pélvica y bienestar integral."
     },
     {
       icon: <Sparkles className="h-8 w-8" />,
-      title: "Terapia de Cuajo",
-      description: "Liberación miofascial tradicional para bienestar digestivo."
+      title: "Técnica del Cuajo (Tradición Llanera)",
+      description: "Técnica ancestral llanera para alineación profunda, circulación y equilibrio del cuerpo."
     }
   ];
 
@@ -40,9 +40,9 @@ const ServicesPreview: React.FC = () => {
     <section className="py-16 bg-cream-light">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-serif font-bold text-primary mb-4">Nuestros Servicios</h2>
+          <h2 className="text-3xl lg:text-4xl font-serif font-bold text-primary mb-4">Terapias Especializadas en Columna</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Ofrecemos un enfoque integral para recuperar tu salud, combinando experiencia tradicional con conocimientos especializados.
+            Don Alfonso ofrece terapias especializadas en columna, tronchaduras, lastimaduras y matriz. Método integral de 43 años combinando tradición llanera con experiencia comprobada.
           </p>
         </div>
 

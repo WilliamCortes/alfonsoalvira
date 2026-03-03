@@ -1,6 +1,5 @@
 import React from 'react';
 import content from '../../data/content.json';
-import { ArrowRight } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
 import Button from '../common/Button';
 
@@ -27,9 +26,9 @@ const HowItWorks: React.FC = () => {
         </div>
 
         <div className="text-center">
-          <Button 
-            size="lg" 
-            href="https://wa.me/573202168589?text=Hola,%20quiero%20iniciar%20mi%20proceso%20de%20recuperación." 
+          <Button
+            size="lg"
+            href="https://wa.me/573202168589?text=Hola,%20quiero%20iniciar%20mi%20proceso%20de%20recuperación."
             external
             className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white shadow-xl animate-pulse"
           >

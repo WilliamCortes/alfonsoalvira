@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { ChevronUp, ChevronDown, Volume2, VolumeX, Play, Pause } from 'lucide-react';
+import { ChevronUp, ChevronDown, Volume2, VolumeX, Play } from 'lucide-react';
 import content from '../../data/content.json';
 
 const VideoCarousel: React.FC = () => {
@@ -7,8 +7,7 @@ const VideoCarousel: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
-  const [progress, setProgress] = useState(0);
-  
+
   const touchStartY = useRef<number>(0);
   const touchEndY = useRef<number>(0);
   const playerRef = useRef<HTMLIFrameElement>(null);
@@ -31,7 +30,7 @@ const VideoCarousel: React.FC = () => {
 
   const togglePlay = () => {
     setIsPlaying(!isPlaying);
-    const message = isPlaying 
+    const message = isPlaying
       ? '{"event":"command","func":"pauseVideo","args":""}'
       : '{"event":"command","func":"playVideo","args":""}';
     playerRef.current?.contentWindow?.postMessage(message, '*');
@@ -39,7 +38,7 @@ const VideoCarousel: React.FC = () => {
 
   const toggleMute = () => {
     setIsMuted(!isMuted);
-    const message = isMuted 
+    const message = isMuted
       ? '{"event":"command","func":"unMute","args":""}'
       : '{"event":"command","func":"mute","args":""}';
     playerRef.current?.contentWindow?.postMessage(message, '*');
@@ -73,7 +72,6 @@ const VideoCarousel: React.FC = () => {
   // Reset state when video changes
   useEffect(() => {
     setIsPlaying(true);
-    setProgress(0);
   }, [currentIndex]);
 
   return (
@@ -82,9 +80,9 @@ const VideoCarousel: React.FC = () => {
         <h2 className="mb-6 text-center text-2xl font-bold text-white md:text-3xl">
           Resultados Reales
         </h2>
-        
+
         {/* Mobile-first Container: 9:16 Aspect Ratio */}
-        <div 
+        <div
           className="relative w-full max-w-sm h-[80vh] bg-black rounded-2xl overflow-hidden shadow-2xl border border-gray-800"
           onTouchStart={onTouchStart}
           onTouchEnd={onTouchEnd}
@@ -98,7 +96,7 @@ const VideoCarousel: React.FC = () => {
           )}
 
           {/* YouTube Iframe Layer */}
-          <div className="absolute inset-0 z-0 h-full w-full pointer-events-none"> 
+          <div className="absolute inset-0 z-0 h-full w-full pointer-events-none">
             <iframe
               ref={playerRef}
               src={embedUrl}
@@ -112,10 +110,10 @@ const VideoCarousel: React.FC = () => {
 
           {/* Overlay UI Layer */}
           <div className="absolute inset-0 z-10 flex flex-col justify-between bg-gradient-to-b from-black/30 via-transparent to-black/60 p-4">
-            
+
             {/* Top Controls */}
             <div className="flex justify-end pt-2">
-               <button 
+              <button
                 onClick={toggleMute}
                 className="rounded-full bg-black/40 p-2 text-white backdrop-blur-sm transition hover:bg-black/60"
               >
@@ -124,7 +122,7 @@ const VideoCarousel: React.FC = () => {
             </div>
 
             {/* Center Play/Pause Trigger Area */}
-            <div 
+            <div
               className="flex-grow flex items-center justify-center cursor-pointer"
               onClick={togglePlay}
             >
@@ -144,18 +142,18 @@ const VideoCarousel: React.FC = () => {
 
               {/* Progress Bar Visual (Static for now as iframe doesn't emit progress easily without complex API) */}
               <div className="h-1 w-full bg-gray-600 rounded-full mb-6 overflow-hidden">
-                <div className="h-full bg-primary w-1/3 animate-pulse"></div> 
+                <div className="h-full bg-primary w-1/3 animate-pulse"></div>
               </div>
 
               {/* Navigation Controls */}
               <div className="flex flex-col gap-4 absolute right-4 bottom-20">
-                 <button 
+                <button
                   onClick={handlePrev}
                   className="rounded-full bg-black/40 p-3 text-white backdrop-blur-sm transition hover:bg-primary hover:scale-110"
                 >
                   <ChevronUp size={24} />
                 </button>
-                <button 
+                <button
                   onClick={handleNext}
                   className="rounded-full bg-black/40 p-3 text-white backdrop-blur-sm transition hover:bg-primary hover:scale-110"
                 >

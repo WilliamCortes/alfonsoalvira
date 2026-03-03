@@ -100,13 +100,13 @@ const SeoLanding: React.FC = () => {
       <Helmet>
         <title>Don Alfonso Alvira: Terapeuta Especialista en Columna Villavicencio</title>
         <meta name="description" content="Don Alfonso Alvira, terapeuta especialista en columna en Villavicencio con 43 años de experiencia. Especialista en alineación manual, cuajo y terapias manuales. ¡Agenda al 3202168589!" />
-        <link rel="canonical" href="https://alfonsoalvira.vendo365.com/don-alfonso-alvira-sobandero-villavicencio" />
-        
+        <link rel="canonical" href="https://alfonsoalvira.vendo365.com/don-alfonso-alvira-terapeuta-villavicencio" />
+
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://alfonsoalvira.vendo365.com/don-alfonso-alvira-sobandero-villavicencio" />
+        <meta property="og:url" content="https://alfonsoalvira.vendo365.com/don-alfonso-alvira-terapeuta-villavicencio" />
         <meta property="og:title" content="Don Alfonso Alvira: Terapeuta Especialista en Columna Villavicencio" />
-        <meta property="og:description" content="Recupera tu movilidad con Don Alfonso Alvira. 43 años de experiencia en terapias manuales de columna en Villavicencio, Meta." />
+        <meta property="og:description" content="Terapeuta especialista en columna vertebral. 43 años de experiencia en terapias manuales de columna en Villavicencio, Meta." />
         <meta property="og:image" content={`https://alfonsoalvira.vendo365.com${alfonsoProfile}`} />
 
         {/* JSON-LD Schema */}
@@ -139,9 +139,9 @@ const SeoLanding: React.FC = () => {
             </div>
             <div className="flex-1 relative">
               <div className="absolute -inset-4 bg-green-100 rounded-full blur-3xl opacity-30"></div>
-              <img 
-                src={alfonsoProfile} 
-                alt="Don Alfonso Alvira Terapeuta tradicional en Villavicencio realizando terapia de columna" 
+              <img
+                src={alfonsoProfile}
+                alt="Don Alfonso Alvira Terapeuta tradicional en Villavicencio realizando terapia de columna"
                 className="relative rounded-2xl shadow-2xl w-full max-w-md mx-auto object-cover object-[50%_25%] aspect-[3/4] border-4 border-white"
               />
             </div>
@@ -158,7 +158,7 @@ const SeoLanding: React.FC = () => {
               La confianza se gana con resultados. Miles de pacientes en Villavicencio y Colombia respaldan nuestro trabajo.
             </p>
           </div>
-          
+
           <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 space-y-6 text-gray-700 leading-relaxed text-lg">
             <p>
               Soy <strong>Don Alfonso Alvira</strong>, y he dedicado mi vida al arte de la terapia manual. No soy un médico académico, soy un <strong>Terapeuta tradicional</strong> con 43 años de práctica empírica ininterrumpida.
@@ -195,7 +195,7 @@ const SeoLanding: React.FC = () => {
                 ¿Busca un Terapeuta de columna en Villavicencio de Confianza?
               </h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                En nuestra cultura llanera, el terepeuta tradicional o sobandero juega un papel vital. Tratamos dolencias que a veces la medicina convencional pasa por alto o trata solo con analgésicos.
+                En nuestra cultura llanera, el terapeuta tradicional juega un papel vital. Tratamos dolencias que a veces la medicina convencional pasa por alto o trata solo con analgésicos.
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
@@ -268,7 +268,7 @@ const SeoLanding: React.FC = () => {
           <h2 className="text-3xl font-serif font-bold text-center text-gray-900 mb-12">
             Preguntas Frecuentes
           </h2>
-          
+
           <div className="space-y-6">
             {structuredData['@graph'][1].mainEntity.map((faq: any, index: number) => (
               <div key={index} className="border-b border-gray-100 pb-6">
@@ -293,18 +293,18 @@ const SeoLanding: React.FC = () => {
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             No deje que el dolor limite su vida. Visite a Don Alfonso Alvira en Villavicencio.
           </p>
-          
+
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-8 text-white/80">
-             <div className="flex items-center gap-2">
-               <MapPin className="text-accent-orange" />
-               <span>Barrio Morichal, Cra 20A #38A-08</span>
-             </div>
-             <div className="flex items-center gap-2">
-               <Clock className="text-accent-orange" />
-               <span>Atención Lunes a Sábado</span>
-             </div>
+            <div className="flex items-center gap-2">
+              <MapPin className="text-accent-orange" />
+              <span>Barrio Morichal, Cra 20A #38A-08</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Clock className="text-accent-orange" />
+              <span>Atención Lunes a Sábado</span>
+            </div>
           </div>
-          
+
           <Button size="lg" href={whatsappUrl} external className="bg-green-500 hover:bg-green-600 text-white border-none shadow-xl animate-pulse text-lg px-8 py-4 h-auto">
             <FaWhatsapp className="mr-3 h-6 w-6" />
             Llamar o Escribir: 320 2168589
